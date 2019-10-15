@@ -1,0 +1,7 @@
+name = Adminimal Custom
+description = Extends the Adminimal theme with some customizations
+core = 7.x
+base theme = adminimal
+
+stylesheets[all][] = custom.css
+scripts[] = custom.js
