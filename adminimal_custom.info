@@ -1,7 +1,5 @@
 name = Adminimal Custom
-description = Extends the Adminimal theme with some customizations
+description = Loads custom js and css for webform module
+package = UBC IT Web Services
 core = 7.x
-base theme = adminimal
-
-stylesheets[all][] = custom.css
-scripts[] = custom.js
+dependencies[] = webform

@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file   adminimal_custom.module
+ * @author James O'Toole
+ *
+ * @brief A module adding some js and css for disabling public file uploads in webforms.
+ *
+ *
+ */
+
+ /**
+* Implements hook_preprocess_html().
+*/
+ function adminimal_custom_preprocess_html(&$variables) {
+  if (arg(0)=="admin") {
+    drupal_add_css(drupal_get_path('module', 'adminimal_custom') . '/css/webform.custom.css', array('group' => CSS_THEME));
+    drupal_add_js(drupal_get_path('module', 'adminimal_custom') . '/js/webform.custom.js', array('group' => JS_THEME));
+  }
+}
